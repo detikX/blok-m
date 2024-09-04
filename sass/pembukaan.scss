@@ -1,0 +1,35 @@
+.preload {
+    min-height: auto;
+    .bungkus {
+        // background: linear-gradient(to right, white, #eaeaea);
+        // border: 2px solid #e85737;
+        // padding: 8px;
+        // background: #848484;
+        // border: 2px solid #fff;
+        // padding: 16px;
+        // border-radius: 16px;
+        padding: 16px;
+        text-align: center;
+        border-bottom: 2px dashed #848484;
+        p {
+            font-family: "Source Code Pro";
+            // color: white;
+        }
+    }
+}
+
+.pembukaan {
+    .image {
+        width: 520px;
+        margin: 0 auto 16px;
+        height: auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
