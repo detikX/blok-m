@@ -36,6 +36,9 @@
         width: 100%;
         height: 100%;
         // height: 100px;
+        @media screen and (max-width: 768px) {
+            background: linear-gradient(to top, $colorred, rgba($colorred, 0.9), $colorred);
+        }
     }
     .image {
         width: 520px;
