@@ -1,14 +1,53 @@
 .peta {
     // background: #a7dff8;
     padding: 0;
+    @keyframes banner2 {
+        0% {
+            transform: rotateY(180deg);
+            right: -270px;
+        }
+        50% {
+            transform: rotateY(180deg);
+            right: 100%;
+        }
+        51% {
+            transform: rotateY(0deg);
+            right: calc(100% + 270px);
+        }
+        100% {
+            transform: rotateY(0deg);
+            right: -270px;
+        }
+    }
+    @keyframes banner {
+        0% {
+            transform: rotateY(180deg);
+            right: -270px;
+        }
+        50% {
+            transform: rotateY(180deg);
+            right: 100%;
+        }
+        51% {
+            transform: rotateY(0deg);
+            right: calc(100% + 270px);
+        }
+        100% {
+            transform: rotateY(0deg);
+            right: -270px;
+        }
+    }
     .mobil {
         position: absolute;
         bottom: 8px;
         filter: grayscale(1);
         &-no1 {
-            left: 0;
+            right: 0;
             width: 180px;
             height: auto;
+            animation: linear infinite;
+            animation-name: banner2;
+            animation-duration: 20s;
             @media screen and (max-width: 768px) {
                 width: 90px;
             }
@@ -22,6 +61,9 @@
             right: 0;
             width: 100px;
             height: auto;
+            animation: linear infinite;
+            animation-name: banner;
+            animation-duration: 15s;
             @media screen and (max-width: 768px) {
                 width: 50px;
             }
@@ -54,16 +96,20 @@
         }
     }
     .tags {
-        background: #7b7b7b;
+        // background: #7b7b7b;
+        background: linear-gradient(-45deg, #3c89bb, #478cb9);
         padding: 8px;
         display: inline-block;
         color: white;
+        border: 1px solid white;
+        border-radius: 8px;
         margin: 0 8px 8px 0;
         font-size: 0.9rem;
+        // font-family: "Source Code Pro";
         cursor: pointer;
         &:hover,
         &:focus {
-            background: green;
+            background: rgb(43, 144, 148);
         }
         @media screen and (max-width: 768px) {
             margin: 0 4px 4px 0;
@@ -123,7 +169,7 @@
         right: 4%;
         top: 0;
         @media screen and (max-width: 768px) {
-            top: 62%;
+            top: 65%;
             left: 8px;
             width: 100%;
             right: initial;
