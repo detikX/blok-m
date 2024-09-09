@@ -20,10 +20,10 @@
         }
         &-no2 {
             right: 0;
-            width: 90px;
+            width: 100px;
             height: auto;
             @media screen and (max-width: 768px) {
-                width: 45px;
+                width: 50px;
             }
             img {
                 width: 100%;
@@ -61,6 +61,10 @@
         margin: 0 8px 8px 0;
         font-size: 0.9rem;
         cursor: pointer;
+        &:hover,
+        &:focus {
+            background: green;
+        }
         @media screen and (max-width: 768px) {
             margin: 0 4px 4px 0;
             font-size: 0.7rem;
