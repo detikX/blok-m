@@ -44,7 +44,7 @@
         &-no1 {
             right: 0;
             width: 180px;
-            z-index: 2;
+            z-index: 3;
             height: auto;
             animation: linear infinite;
             animation-name: banner2;
@@ -78,7 +78,8 @@
         }
         &-no2 {
             right: 0;
-            z-index: 3;
+            z-index: 2;
+            bottom: 12px;
             width: 100px;
             height: auto;
             animation: linear infinite;
