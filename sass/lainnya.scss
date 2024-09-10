@@ -22,4 +22,50 @@
         position: relative;
         height: 100vh;
     }
+
+    .content-title {
+        color: white;
+        border: 2px solid;
+        width: fit-content;
+        display: inline-block;
+        margin: 8px;
+        padding: 8px 16px;
+        cursor: pointer;
+        position: relative;
+        @media screen and (max-width:768px) {
+            padding: 4px 8px;
+        }
+        p {
+            position: relative;
+            z-index: 5;
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 0;
+            @media screen and (max-width:768px) {
+                font-size: .9rem;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 85%;
+            z-index: 1;
+            height: 120%;
+            background-color: #767575;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            height: 50%;
+            z-index: 1;
+            width: 120%;
+            background-color: #767575;
+        }
+    }
 }
