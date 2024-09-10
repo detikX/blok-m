@@ -22,13 +22,19 @@
         position: relative;
         height: 100vh;
     }
-
+    .wrap-all {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+    }
     .content-title {
         color: white;
         border: 2px solid;
         width: fit-content;
         display: inline-block;
-        margin: 8px;
+        margin: 8px 16px;
         padding: 8px 16px;
         cursor: pointer;
         position: relative;
