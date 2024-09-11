@@ -24,15 +24,31 @@
 // })
 
 
-var popup = document.getElementById('popup-wrapper');
+var popup = $('#popup-wrapper');
 var btn = document.getElementById("popup-btn");
-var span = document.getElementById("close");
-btn.onclick = function () {
-    popup.classList.add('show');
-}
-span.onclick = function () {
-    popup.classList.remove('show');
-}
+var span = $("#close");
+// btn.onclick = function () {
+//     popup.classList.add('show');
+// }
+var btn = $(".content-title");
+// var trig = $(".content-title").attr('data-name')
+
+btn.click(function () {
+    var datatrig = $(this).attr('data-name');
+    var cek_ = "show-" + datatrig + "";
+    popup.addClass('show');
+    $(".popup-container").find("#" + cek_ + "").show()
+
+})
+
+
+// span.onclick = function () {
+//     popup.classList.remove('show');
+// }
+span.click(function () {
+    popup.removeClass("show")
+    $(".datadata").hide()
+})
 
 window.onclick = function (event) {
     if (event.target == popup) {
