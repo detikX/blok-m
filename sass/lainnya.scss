@@ -2,14 +2,14 @@
     background: #767575;
     h3 {
         font-size: 2.3rem !important;
-        font-family: 'Mulish';
-        @media screen and (max-width:768px) {
+        font-family: "Mulish";
+        @media screen and (max-width: 768px) {
             font-size: 1.5rem !important;
         }
     }
     .image {
         width: 100%;
-        height: 420px;
+        height: 60vh;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -17,7 +17,7 @@
             height: 360px;
         }
 
-        transform: translate(-50%, -50%) rotate(-2deg);
+        transform: translate(-50%, -50%) rotate(-1deg);
         border: 5px solid white;
         img {
             width: 100%;
@@ -34,37 +34,165 @@
         top: 85%;
         left: 50%;
         width: 100%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
     .wrap-top {
         position: absolute;
         top: 10%;
         left: 50%;
         width: 100%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
     .content-title {
-        color: white;
+        &.lini {
+            left: -24%;
+            @media screen and (max-width: 768px) {
+                left: 12%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 246px;
+                border: 2px dashed #eaeaea;
+                height: 200px;
+                top: 16px;
+                right: 0;
+                z-index: -1;
+                border-right: 2px dashed #767575;
+                border-top: 2px dashed #767575;
+                @media screen and (max-width: 768px) {
+                    width: 80px;
+                    border: 2px dashed #eaeaea;
+                    height: 50vh;
+                    top: 50%;
+                    right: 80%;
+                    border-right: 2px dashed #767575;
+                    border-bottom: 2px dashed #767575;
+                }
+            }
+        }
+        &.trans {
+            left: 35%;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 246px;
+                border: 2px dashed #eaeaea;
+                height: 200px;
+                top: 80%;
+                right: 32%;
+                z-index: -1;
+                border-left: 2px dashed #767575;
+                border-top: 2px dashed #767575;
+                @media screen and (max-width: 768px) {
+                    width: 225px;
+                    border: 2px dashed #eaeaea;
+                    height: 50vh;
+                    top: 80%;
+                    right: 80%;
+                    border-left: 2px dashed #767575;
+                    border-top: 2px dashed #767575;
+                }
+            }
+        }
+        &.toko {
+            left: 95%;
+            @media screen and (max-width: 768px) {
+                left: 50%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 206px;
+                border: 2px dashed #eaeaea;
+                height: 80px;
+                bottom: 90%;
+                right: 32%;
+                z-index: -1;
+                // border-left: 2px dashed #767575;
+                border-bottom: 2px dashed #767575;
+                @media screen and (max-width: 768px) {
+                    width: 96px;
+                    border: 2px dashed #eaeaea;
+                    height: 80px;
+                    bottom: 50%;
+                    border-top: 2px dashed #767575;
+                    border-right: 2px dashed #767575;
+                    right: 78%;
+                }
+            }
+        }
+        &.makanan {
+            left: -60%;
+            @media screen and (max-width: 768px) {
+                left: 12%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 206px;
+                border: 2px dashed #eaeaea;
+                height: 80px;
+                bottom: 80%;
+                right: 32%;
+                z-index: -1;
+                // border-left: 2px dashed #767575;
+                border-bottom: 2px dashed #767575;
+                @media screen and (max-width: 768px) {
+                    width: 70px;
+                    border: 2px dashed #eaeaea;
+                    height: 50vh;
+                    bottom: 55%;
+                    right: 80%;
+                    border-right: 2px dashed #767575;
+                }
+            }
+        }
+        // color: white;
         // border: 2px solid;
-        background: #494949;
+        // background: #eaeaea;
         width: fit-content;
         display: inline-block;
         margin: 8px 16px;
         padding: 8px 16px;
         cursor: pointer;
         position: relative;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             padding: 4px 8px;
             margin: 4px 8px;
+        }
+        .iconx {
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            padding: 16px;
+            display: inline-block;
+            margin-right: 8px;
+            background: #eaeaea;
+            // border: 1px solid black;
+            border-radius: 50%;
+            @media screen and (max-width: 768px) {
+                width: 50px;
+                height: 50px;
+                padding: 8px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
         p {
             position: relative;
             z-index: 5;
-            font-size: 1.1rem;
-            color: white;
+            display: inline-block;
+            font-weight: bold;
+            vertical-align: middle;
+            font-size: 1.4rem;
+            color: #eaeaea;
             margin-bottom: 0;
-            @media screen and (max-width:768px) {
-                font-size: .9rem;
+            @media screen and (max-width: 768px) {
+                font-size: 0.9rem;
             }
         }
         // &::before {
