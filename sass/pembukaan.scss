@@ -104,6 +104,39 @@
                 bottom: 32px;
             }
         }
+
+        @keyframes MoveUpDownMob {
+            0% {
+                opacity: 0;
+                right: 0;
+                bottom: 28px;
+            }
+            20% {
+                opacity: 0.5;
+                right: 0;
+                bottom: 28px;
+            }
+            30% {
+                opacity: 1;
+                right: 0px;
+                bottom: 28px;
+            }
+            70% {
+                opacity: 1;
+                right: 32px;
+                bottom: 10px;
+            }
+            90% {
+                opacity: 1;
+                right: 32px;
+                bottom: 10px;
+            }
+            100% {
+                opacity: 0;
+                right: 32px;
+                bottom: 10px;
+            }
+        }
         .bus {
             position: absolute;
             opacity: 0;
@@ -114,7 +147,8 @@
             height: auto;
             @media screen and (max-width: 768px) {
                 width: 80px;
-                animation: none;
+                // animation: none;
+                animation: MoveUpDownMob 4s linear infinite;
                 opacity: 1;
                 bottom: 28px;
             }
