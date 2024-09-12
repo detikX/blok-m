@@ -1,5 +1,5 @@
 .lainnya {
-    background: #767575;
+    background: $colorred;
     h3 {
         font-size: 2.3rem !important;
         font-family: "Mulish";
@@ -58,16 +58,16 @@
                 top: 16px;
                 right: 0;
                 z-index: -1;
-                border-right: 2px dashed #767575;
-                border-top: 2px dashed #767575;
+                border-right: 2px dashed $colorred;
+                border-top: 2px dashed $colorred;
                 @media screen and (max-width: 768px) {
                     width: 80px;
                     border: 2px dashed #eaeaea;
                     height: 50vh;
                     top: 50%;
                     right: 80%;
-                    border-right: 2px dashed #767575;
-                    border-bottom: 2px dashed #767575;
+                    border-right: 2px dashed $colorred;
+                    border-bottom: 2px dashed $colorred;
                 }
             }
         }
@@ -82,17 +82,17 @@
                 top: 80%;
                 right: 32%;
                 z-index: -1;
-                border-left: 2px dashed #767575;
-                border-top: 2px dashed #767575;
+                border-left: 2px dashed $colorred;
+                border-top: 2px dashed $colorred;
                 @media screen and (max-width: 768px) {
                     width: 225px;
                     border: 2px dashed #eaeaea;
                     height: 50vh;
                     top: 80%;
                     right: 80%;
-                    border-left: 2px dashed #767575;
-                    border-top: 2px dashed #767575;
-                    border-bottom: 2px dashed #767575;
+                    border-left: 2px dashed $colorred;
+                    border-top: 2px dashed $colorred;
+                    border-bottom: 2px dashed $colorred;
                 }
             }
         }
@@ -110,15 +110,15 @@
                 bottom: 95%;
                 right: 32%;
                 z-index: -1;
-                // border-left: 2px dashed #767575;
-                border-bottom: 2px dashed #767575;
+                // border-left: 2px dashed $colorred;
+                border-bottom: 2px dashed $colorred;
                 @media screen and (max-width: 768px) {
                     width: 96px;
                     border: 2px dashed #eaeaea;
                     height: 80px;
                     bottom: 50%;
-                    border-top: 2px dashed #767575;
-                    border-right: 2px dashed #767575;
+                    border-top: 2px dashed $colorred;
+                    border-right: 2px dashed $colorred;
                     right: 78%;
                 }
             }
@@ -137,15 +137,15 @@
                 bottom: 90%;
                 right: 32%;
                 z-index: -1;
-                // border-left: 2px dashed #767575;
-                border-bottom: 2px dashed #767575;
+                // border-left: 2px dashed $colorred;
+                border-bottom: 2px dashed $colorred;
                 @media screen and (max-width: 768px) {
                     width: 70px;
                     border: 2px dashed #eaeaea;
                     height: 50vh;
                     bottom: 55%;
                     right: 80%;
-                    border-right: 2px dashed #767575;
+                    border-right: 2px dashed $colorred;
                 }
             }
         }
@@ -205,7 +205,7 @@
         //     width: 85%;
         //     z-index: 1;
         //     height: 120%;
-        //     background-color: #767575;
+        //     background-color: $colorred;
         // }
         // &::after {
         //     content: "";
@@ -216,7 +216,7 @@
         //     height: 50%;
         //     z-index: 1;
         //     width: 120%;
-        //     background-color: #767575;
+        //     background-color: $colorred;
         // }
     }
 }

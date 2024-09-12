@@ -6,8 +6,8 @@
 // $colorred: #7b2031; //jurno
 //$colorred: #42d4bf; //tosca kemenag
 // $colorred: #eee;
-$colorred: #d8deeb;
-// $colorred: #0b1126;
+// $colorred: #d8deeb; //abu
+$colorred: #2c4138;
 $colorsecond: #42d4bf;
 
 .labels {
@@ -136,7 +136,8 @@ section {
     p,
     li {
         font-size: 1.2rem;
-        color: #252525;
+        // color: #252525;
+        color: #fafafa;
         // font-weight: 300;
         // line-height: 1.3rem;
         @media screen and (max-width: 768px) {
