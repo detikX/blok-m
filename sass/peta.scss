@@ -118,7 +118,8 @@
     }
     .tags {
         // background: #7b7b7b;
-        background: linear-gradient(-45deg, #3c89bb, #478cb9);
+        // background: linear-gradient(-45deg, #3c89bb, #478cb9);
+        background: linear-gradient(to right, #229b7b, #3fbaa3);
         padding: 8px;
         display: inline-block;
         color: white;
@@ -130,7 +131,9 @@
         cursor: pointer;
         &:hover,
         &:focus {
-            background: rgb(43, 144, 148);
+            background: white;
+            color: #229b7b;
+            border: 1px solid #3fbaa3;
         }
         @media screen and (max-width: 768px) {
             margin: 0 4px 4px 0;
