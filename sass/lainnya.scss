@@ -15,6 +15,7 @@
         top: 50%;
         @media screen and (max-width: 768px) {
             height: 360px;
+            background: #183e24;
         }
 
         transform: translate(-50%, -50%) rotate(-1deg);
@@ -133,11 +134,11 @@
                 position: absolute;
                 width: 206px;
                 border: 2px dashed #eaeaea;
-                height: 80px;
+                height: 28vh;
                 bottom: 90%;
                 right: 32%;
                 z-index: -1;
-                // border-left: 2px dashed $colorred;
+                border-right: 2px dashed $colorred;
                 border-bottom: 2px dashed $colorred;
                 @media screen and (max-width: 768px) {
                     width: 70px;

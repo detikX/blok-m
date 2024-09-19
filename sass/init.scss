@@ -1,15 +1,30 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Zain:wght@300;400;900&family=Teachers:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain:wght@300;400;900&family=Sofadi+One:wght@400;900&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
 //$colorred: #42d4bf; //tosca kemenag
 // $colorred: #eee;
 // $colorred: #d8deeb; //abu
-$colorred: #2c4138;
+$colorred: #214e2f;
 $colorsecond: #42d4bf;
 
+.font-blokm {
+    font-family: "Sofadi One" !important;
+    color: white !important;
+    &.size {
+        font-size: 7rem !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            line-height: 6rem;
+        }
+    }
+}
 .labels {
     // background: $colorred;
     background: #840020;
