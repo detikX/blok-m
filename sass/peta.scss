@@ -1,6 +1,9 @@
 .peta {
     // background: #a7dff8;
     padding: 0;
+    @media screen and (max-width: 768px) {
+        min-height: 60vh;
+    }
     @keyframes banner2 {
         0% {
             transform: rotateY(180deg);
