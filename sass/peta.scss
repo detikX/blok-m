@@ -3,6 +3,7 @@
     padding: 0;
     @media screen and (max-width: 768px) {
         min-height: 60vh;
+        background: linear-gradient(to bottom, #214e2f 40%, #212120 30%);
     }
     @keyframes banner2 {
         0% {
@@ -158,19 +159,20 @@
         top: 0;
         height: auto;
         filter: invert(0.9) hue-rotate(-80deg);
-
+        // border-top: 3px solid black;
         // &::after {
         //     content: "";
         //     position: absolute;
-        //     bottom: 0;
+        //     top: 0;
         //     left: 0;
         //     right: 0;
         //     width: 100%;
+        //     // filter: hue-rotate(0deg) invert(0);
         //     height: 80px;
-        //     background: linear-gradient(to top, black, transparent);
-        //     @media screen and (max-width: 768px) {
-        //         background: linear-gradient(to top, #d8deeb, transparent);
-        //     }
+        //     background: linear-gradient(to bottom, $colorred, transparent);
+        // @media screen and (max-width: 768px) {
+        //     background: linear-gradient(to top, #d8deeb, transparent);
+        // }
         // }
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -191,7 +193,7 @@
         position: absolute;
         left: 85%;
         z-index: 4;
-        top: 70%;
+        top: 36%;
         transform: translate(-50%, -50%);
         @media screen and (max-width: 768px) {
             // width: 45%;
