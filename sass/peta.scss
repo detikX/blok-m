@@ -152,16 +152,12 @@
     }
     .image {
         width: 100%;
-        // margin: 0 auto;
         position: relative;
         left: 0;
         right: 0;
         top: 0;
-        height: 100%;
-        // border: 2px solid;
-        // filter: drop-shadow(1px 2px 3px #ccc);
-
-        // margin: 0 auto;
+        height: auto;
+        filter: invert(0.9) hue-rotate(-80deg);
 
         // &::after {
         //     content: "";
@@ -191,13 +187,19 @@
     }
 
     .nama-lokasi {
-        width: 45%;
+        width: 40%;
         position: absolute;
-        left: 50%;
+        left: 85%;
         z-index: 4;
         top: 70%;
         transform: translate(-50%, -50%);
         @media screen and (max-width: 768px) {
+            // width: 45%;
+            // position: absolute;
+            left: 50%;
+            // z-index: 4;
+            // top: 70%;
+            // transform: translate(-50%, -50%);
             top: 65%;
             // left: 8px;
             width: 90%;
