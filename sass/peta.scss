@@ -158,22 +158,27 @@
         right: 0;
         top: 0;
         height: auto;
-        filter: invert(0.9) hue-rotate(-80deg);
-        // border-top: 3px solid black;
-        // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     width: 100%;
-        //     // filter: hue-rotate(0deg) invert(0);
-        //     height: 80px;
-        //     background: linear-gradient(to bottom, $colorred, transparent);
-        // @media screen and (max-width: 768px) {
-        //     background: linear-gradient(to top, #d8deeb, transparent);
-        // }
-        // }
+        .peta-blok-m-full {
+           
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                filter: invert(0.9) hue-rotate(-80deg);
+            }
+        }
+        .markers {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
         @media screen and (max-width: 768px) {
             width: 100%;
             height: 80%;
