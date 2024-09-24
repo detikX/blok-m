@@ -55,3 +55,11 @@ window.onclick = function (event) {
         popup.classList.remove('show');
     }
 }
+
+$('.nama-lokasi .tags').click(function(event) {
+    var id = $(this).attr('id');
+    var toShow = '#show-' + id;
+
+    $('.markers').not(toShow).hide();
+    $(toShow).fadeIn();
+});
