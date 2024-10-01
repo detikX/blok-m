@@ -102,3 +102,16 @@
         }
     }
 }
+.klik {
+    position: absolute;
+    left: 60%;
+    font-size: 1.3rem;
+    top: 5%;
+    color: white;
+    @media screen and (max-width:768px) {
+        font-size: .8rem;
+        top: 30%;
+        left: 5%;
+        width: 100%;
+    }
+}
