@@ -43,6 +43,20 @@
 }
 
 .tod {
+
+    .brush {
+        position: absolute;
+        left: 20%;
+        width: 200px;
+        height: auto;
+        top: 50%;
+        opacity: .2;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .titlex {
         text-align: center;
         h3 {

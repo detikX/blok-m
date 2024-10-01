@@ -53,7 +53,7 @@
     &::after {
         content: "";
         position: absolute;
-        background: linear-gradient(to top, $colorred, rgba($colorred, 0.85), $colorred);
+        background: linear-gradient(to top, $colorred, rgba($colorred, 0.9), $colorred);
         top: 0;
         left: 0;
         right: 0;
