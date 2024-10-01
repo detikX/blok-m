@@ -56,6 +56,10 @@ window.onclick = function (event) {
     }
 }
 
+$(".tags").click(function(){
+    $(".klik").hide()
+})
+
 $('.nama-lokasi .tags').click(function(event) {
     var id = $(this).attr('id');
     var toShow = '#show-' + id;
