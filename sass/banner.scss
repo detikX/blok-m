@@ -115,3 +115,11 @@
         width: 100%;
     }
 }
+
+.hanya-mobile {
+    
+    @media screen and (max-width:768px) {
+        width: 35% !important;
+        height: auto;
+    }
+}
