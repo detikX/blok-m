@@ -134,7 +134,8 @@
         // font-family: "Source Code Pro";
         cursor: pointer;
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
             background: white;
             color: #229b7b;
             border: 1px solid #3fbaa3;
