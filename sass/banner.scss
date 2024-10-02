@@ -1,7 +1,8 @@
 .banner {
     // background: skyblue;
-    // background: #c1c1c1;
-    background: linear-gradient(to bottom, #95da56, white);
+    // background: #ececec;
+    // background: linear-gradient(to bottom, #95da56, white);
+    // background: linear-gradient(to bottom, #b9e9ff, white);
     @media screen and (max-width: 768px) {
         min-height: 80vh;
     }
@@ -19,13 +20,13 @@
     }
 
     .bgbg {
-        width: 120%;
+        width: 100%;
         /* inset: 0; */
         height: 80vh;
         filter: opacity(0.3) grayscale(1);
         position: absolute;
         @media screen and (max-width: 768px) {
-            height: 40vh;
+            // height: 40vh;
         }
         img {
             width: 100%;
@@ -55,11 +56,15 @@
     .image {
         position: absolute;
         // inset: 0;
-        width: 100%;
+        width: auto;
         height: 450px;
         left: 50%;
-        top: 50%;
+        top: 60%;
         transform: translate(-50%, -50%);
+        @media screen and (max-width: 768px) {
+            width: 90%;
+            top: 65%;
+        }
         img {
             width: 100%;
             height: 100%;
