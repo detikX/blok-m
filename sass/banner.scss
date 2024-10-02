@@ -1,11 +1,22 @@
 .banner {
     // background: skyblue;
     // background: #c1c1c1;
+    background: linear-gradient(to bottom, #95da56, white);
     @media screen and (max-width: 768px) {
-        min-height: 70vh;
+        min-height: 80vh;
     }
 
-   
+    .new {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        inset: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
     .bgbg {
         width: 120%;
@@ -13,9 +24,8 @@
         height: 80vh;
         filter: opacity(0.3) grayscale(1);
         position: absolute;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             height: 40vh;
-            
         }
         img {
             width: 100%;
@@ -81,7 +91,7 @@
         position: absolute;
         z-index: 5;
         left: 50%;
-        top: 80%;
+        top: 20%;
         text-align: center;
         transform: translate(-50%, -50%);
         // background: linear-gradient(to right, rgb(6 46 67 / 80%), rgb(6 46 67 / 50%));
@@ -110,8 +120,8 @@
     font-size: 1.3rem;
     top: 5%;
     color: white;
-    @media screen and (max-width:768px) {
-        font-size: .8rem;
+    @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
         top: 30%;
         left: 5%;
         width: 100%;
@@ -119,8 +129,7 @@
 }
 
 .hanya-mobile {
-    
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         width: 35% !important;
         height: auto;
     }
