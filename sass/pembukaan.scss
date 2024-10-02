@@ -290,6 +290,11 @@
         // right: -50%;
         transform: rotate(3deg);
         margin: 16px 0 8px 16px;
+        @media screen and (max-width: 768px) {
+            right: -15%;
+            position: relative;
+            float: initial;
+        }
         // bottom: 0%;
         .selotip {
             // content: "";
