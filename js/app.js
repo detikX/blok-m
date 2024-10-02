@@ -56,14 +56,31 @@ window.onclick = function (event) {
     }
 }
 
-$(".tags").click(function(){
+$(".tags").click(function () {
     $(".klik").hide()
 })
 
-$('.nama-lokasi .tags').click(function(event) {
+$('.nama-lokasi .tags').click(function (event) {
     var id = $(this).attr('id');
     var toShow = '#show-' + id;
 
     $('.markers').not(toShow).hide();
     $(toShow).fadeIn();
+});
+
+
+//fancy box
+$('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+        "slideShow",
+        "thumbs",
+        "zoom",
+        "fullScreen",
+        "share",
+        "close"
+    ],
+    loop: true,
+    transitionEffect: 'fade',
+    transitionDuration: 500,
+    protect: true
 });
