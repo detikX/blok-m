@@ -35,10 +35,11 @@
                     // bottom: 0;
                     // left: 0;
                     // right: 0;
-                    background: white;
+                    // background: white;
                     // height: 100px;
                     font-size: 0.85rem;
                     margin: 0px 8px 16px;
+                    display: none;
                     padding: 16px;
                     font-weight: 700;
                     color: $colorred;
@@ -52,12 +53,13 @@
                 }
                 &-height {
                     &__odd {
-                        height: 280px;
-                        margin: 0 8px;
-                        border: 3px solid white;
+                        height: 200px;
+                        margin: 6px 6px;
+                        // border: 3px solid white;
                         position: relative;
                         @media screen and (max-width: 768px) {
-                            height: 135px;
+                            height: 125px;
+                            margin: 4px;
                         }
                         &::before {
                             content: "";
@@ -83,19 +85,21 @@
                             position: absolute;
                             bottom: 0;
                             left: 0;
+
                             right: 0;
-                            height: 100px;
+                            // height: 100px;
                             background: linear-gradient(to top, black, transparent);
                         }
                     }
 
                     &__even {
-                        margin: 0 8px;
-                        height: 220px;
+                        margin: 6px 6px;
+                        height: 200px;
                         position: relative;
-                        border: 3px solid white;
+                        // border: 3px solid white;
                         @media screen and (max-width: 768px) {
                             height: 125px;
+                            margin: 4px;
                         }
                         &::before {
                             content: "";
