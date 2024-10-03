@@ -84,3 +84,20 @@ $('[data-fancybox="gallery"]').fancybox({
     transitionDuration: 500,
     protect: true
 });
+
+
+$("#play").click(function () {
+    responsiveVoice.speak($(".bungkus p").text(), "Indonesian Female");
+    setTimeout(() => {
+        $('html, body').animate({
+            scrollTop: $(".pembukaan").offset().top - 72
+        }, 1000);
+
+    }, 12000);
+
+
+})
+$("#stop").click(function () {
+    responsiveVoice.cancel();
+
+})
