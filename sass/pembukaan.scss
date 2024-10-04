@@ -350,6 +350,21 @@
         right: 16%;
         top: 50%;
     }
+
+    &.pos-left-90 {
+        background: #0f86e4;
+        left: 16%;
+        top: 95%;
+    }
+
+    &.pos-top-80 {
+        background: #db4838;
+        right: 20%;
+        top: 82%;
+        @media screen and (max-width: 768px) {
+            right: 16%;
+        }
+    }
     &.pos-left-30 {
         background: #db4838;
         left: 16%;
