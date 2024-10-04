@@ -101,3 +101,16 @@ $("#stop").click(function () {
     responsiveVoice.cancel();
 
 })
+
+
+
+var header = document.getElementById("nama-lokasi");
+var btns = $(".tags");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        // alert(1)
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}

@@ -131,6 +131,11 @@
         border-radius: 8px;
         margin: 0 8px 8px 0;
         font-size: 0.9rem;
+        &.active {
+            background: white;
+            color: #229b7b;
+            border: 1px solid #3fbaa3;
+        }
         // font-family: "Source Code Pro";
         cursor: pointer;
         &:hover,
@@ -160,7 +165,6 @@
         top: 0;
         height: auto;
         .peta-blok-m-full {
-           
             img {
                 width: 100%;
                 height: 100%;
@@ -180,7 +184,7 @@
                 object-fit: contain;
             }
         }
-        
+
         @media screen and (max-width: 768px) {
             width: 100%;
             height: 80%;
