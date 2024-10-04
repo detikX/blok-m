@@ -341,8 +341,8 @@
 }
 
 .bulet {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
     &.pos-right-50 {
@@ -367,8 +367,11 @@
     }
     &.pos-left-30 {
         background: #db4838;
-        left: 16%;
+        left: 20%;
         top: 30%;
+        @media screen and (max-width: 768px) {
+            right: 16%;
+        }
     }
     z-index: 5;
 }
