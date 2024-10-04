@@ -185,6 +185,8 @@ section {
             background: rgb(34 114 59 / 70%);
             padding: 8px;
             border-radius: 8px;
+            position: relative;
+            z-index: 6;
         }
         @media screen and (max-width: 400px) {
             font-size: 1rem;
