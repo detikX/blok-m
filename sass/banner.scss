@@ -97,7 +97,7 @@
         z-index: 5;
         left: 50%;
         top: 20%;
-        text-align: center;
+        // text-align: center;
         transform: translate(-50%, -50%);
         // background: linear-gradient(to right, rgb(6 46 67 / 80%), rgb(6 46 67 / 50%));
         width: 50%;
@@ -112,7 +112,8 @@
             // text-shadow: 3px 3px black;
             font-size: 4rem;
             font-weight: 400 !important;
-            font-family: "Permanent Marker" !important;
+            font-style: normal;
+            font-family: "Gloria Hallelujah" !important;
             @media screen and (max-width: 768px) {
                 font-size: 3rem;
                 line-height: 3rem;

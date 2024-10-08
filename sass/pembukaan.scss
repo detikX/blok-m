@@ -254,7 +254,7 @@
     z-index: 6;
     @media screen and (max-width: 768px) {
         width: 85%;
-        height: 190px;
+        height: fit-content;
         margin: 32px 0 !important;
         // float: initial;
     }

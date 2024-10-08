@@ -30,8 +30,10 @@
 $colorred: #214e2f;
 $colorsecond: #42d4bf;
 
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
 .font-blokm {
-    font-family: "Permanent Marker" !important;
+    font-family: "Gloria Hallelujah" !important;
     // color: #e2b142 !important;
     color: #db4838;
     &.size {
