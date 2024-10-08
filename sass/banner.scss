@@ -103,7 +103,7 @@
         width: 50%;
         padding: 8px;
         @media screen and (max-width: 768px) {
-            width: 100%;
+            width: 90%;
             top: 30%;
         }
 
@@ -111,8 +111,9 @@
             color: white;
             // text-shadow: 3px 3px black;
             font-size: 4rem;
-            font-weight: 400 !important;
+            // font-weight: 400 !important;
             font-style: normal;
+            font-weight: 600;
             font-family: "Gloria Hallelujah" !important;
             @media screen and (max-width: 768px) {
                 font-size: 3rem;

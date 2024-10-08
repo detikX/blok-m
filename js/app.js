@@ -60,6 +60,11 @@ $(".tags").click(function () {
     $(".klik").hide()
 })
 
+
+$(".content-title").click(function () {
+    $(".sembunyikan").hide()
+})
+
 $('.nama-lokasi .tags').click(function (event) {
     var id = $(this).attr('id');
     var toShow = '#show-' + id;
