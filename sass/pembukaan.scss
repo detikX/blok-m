@@ -12,6 +12,10 @@
         padding: 16px;
         text-align: center;
         border-bottom: 1px dashed #848484;
+        @media screen and (max-width: 768px) {
+            border-radius: 24px;
+            background: #256d3b;
+        }
         p {
             font-family: "Source Code Pro";
             // color: white;
