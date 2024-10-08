@@ -1,5 +1,8 @@
 .taman-literasi {
-    padding: 0;
+    padding: 0 0 75px 0;
+    @media screen and (max-width: 768px) {
+        padding: 16px 0;
+    }
     .titlex {
         text-align: center;
         h3 {
