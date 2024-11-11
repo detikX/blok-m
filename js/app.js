@@ -60,6 +60,16 @@ $(".tags").click(function () {
     $(".klik").hide()
 })
 
+$('.slder-first').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    // arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+
 
 $(".content-title").click(function () {
     $(".sembunyikan").hide()
